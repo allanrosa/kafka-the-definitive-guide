@@ -1,12 +1,12 @@
-#Meet Kafka
+# Meet Kafka
 
-##Publish/Subscribe Messaging
+## Publish/Subscribe Messaging
 Publish/subscribe messaging is a pattern that is characterized by the sender (publisher) of a piece of data (message) 
 not specifically directing it to a receiver. Instead, the publisher classifies the message somehow, 
 and that receiver (subscriber) subscribes to receive certain classes of messages. 
 Pub/sub systems often have a broker, a central point where messages are published, to facilitate this.
 
-##How it starts
+## How it starts
 For example, you create an application that needs to send monitoring information somewhere and displays your 
 metrics on a dashboard
 
@@ -22,21 +22,21 @@ metrics on a dashboard
   ![](chapter-1-3.png)
   Congratulations, you have built a publish-subscribe messaging system!
   
-  ##Individual queue systems
+  ## Individual queue systems
   You also know that there will be more use cases for messaging coming soon.
   
   ![](chapter-1-4.png)
   What  you would like to have is a single centralized system that allows for publishing generic
   types of data, which will grow as your business grows.
   
-  ##Enter Kafka
+  ## Enter Kafka
   
   * Designed to solve this problem;
   * Often described as a distributing streaming platform;
   * Is designed to provide a durable record of all transactions;
   * The data can be distributed within the system to provide additional protections against failures;
   
-  ###Messages and batches
+  ### Messages and batches
   
   * The unit of data within Kafka is called a message (similar to row or record in databases);
   * Messages is simply an array of bytes as far as Kafka is concerned;
@@ -44,7 +44,7 @@ metrics on a dashboard
   * Keys are used when messages are to be written to partitions in a more controlled manner;
   * For efficiency, messages are written into Kafka in batches.
   
-  ###Schemas
+  ### Schemas
   
   * Avro is a serialization framework originally developed for Hadoop;
   * Provides a compact serialization format;
@@ -55,7 +55,7 @@ metrics on a dashboard
   sages to be decoupled.
   By using well-defined schemas and storing them in a common repository, the messages in Kafka can be understood without coordination.
   
-  ###Topics and partitions
+  ### Topics and partitions
   
   * Messages in Kafka are categorized into topics (like database table or a folder in a filesystem);
   * Topics are broken down into a number of partitions;
@@ -65,7 +65,7 @@ metrics on a dashboard
   
    ![](chapter-1-5.png)
    
-   ###Producers and consumers
+   ### Producers and consumers
    
    **Producers:**
    * Producers create new messages;
@@ -83,7 +83,7 @@ metrics on a dashboard
       
    ![](chapter-1-6.png)
    
-   ###Brokers and Clusters
+   ### Brokers and Clusters
    
    ***Brookers***
    * A single Kafka server is called a broker.
@@ -105,7 +105,7 @@ metrics on a dashboard
    * Kafka brokers are configured with a default retention setting for topics (time or size);
    * Topics can also be configured with their own retention settings;
    
-   ###Multiple clusters
+   ### Multiple clusters
    
    ***Reasons***
    * Segregation of types of data
@@ -117,7 +117,7 @@ metrics on a dashboard
    cluster, not between multiple clusters.
    The Kafka project includes a tool called MirrorMaker
    
-   ###Why Kafka?
+   ### Why Kafka?
    
    * Kafka is able to handle multiple producers, whether those clients are using many topics or the same topic;
    * Kafka is designed for multiple consumers to read any single stream of messages without interfering with each other;
@@ -126,7 +126,7 @@ metrics on a dashboard
    * Scalable (one or many brokers or a large cluster);
    * High Performance;
    
-   ###Use cases
+   ### Use cases
    * Activity tracking - The original use case for Kafka, as it was designed at LinkedIn, is that of user activity
    tracking.
    * Messaging - Used for messaging, where applications need to send notifications (such as emails) to users.
@@ -135,7 +135,7 @@ metrics on a dashboard
    to receive live updates as they happen.
    *Stream processing - ETL
    
-   ##Kafka's origin
+   ## Kafka's origin
    Kafka was created to address the data pipeline problem at LinkedIn.
    
    ### LinkedIn's problems
