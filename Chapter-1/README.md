@@ -11,6 +11,7 @@ For example, you create an application that needs to send monitoring information
 metrics on a dashboard
 
  ![](chapter-1-1.png)
+ 
  You decide you would like to analyze your metrics over
  a longer term, and that doesn’t work well in the dashboard.
  
@@ -51,8 +52,7 @@ metrics on a dashboard
   * Schemas that are separate from the message payloads;
   * Strong data typing;
   
-  A consistent data format is important in Kafka, as it allows writing and reading mes‐
-  sages to be decoupled.
+  A consistent data format is important in Kafka, as it allows writing and reading messages to be decoupled.
   By using well-defined schemas and storing them in a common repository, the messages in Kafka can be understood without coordination.
   
   ###Topics and partitions
@@ -85,10 +85,10 @@ metrics on a dashboard
    
    ###Brokers and Clusters
    
-   ***Brookers***
+   ***Brokers***
    * A single Kafka server is called a broker.
    * Receives messages from producers, assigns offsets to them and commits the messages to storage on disk;
-   * It also services consumers, responding to fetch requests for partitions;
+   * It also serves consumers, responding to fetch requests for partitions;
    * A single broker can easily handle thousands of partitions and millions of messages per second.
    
    ***Clusters***
@@ -138,9 +138,8 @@ metrics on a dashboard
    ##Kafka's origin
    Kafka was created to address the data pipeline problem at LinkedIn.
    
-   ### LinkedIn's problems
-   
    ### The Name
+   Tribute for the writer Franz Kafka
    
    
    
