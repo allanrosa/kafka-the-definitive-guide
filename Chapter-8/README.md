@@ -103,7 +103,7 @@ completely unavailable.Or perhaps you need geographic resiliency. Your entire bu
 is running from a datacenter in California, but you need a second datacenter in Texas 
 that usually doesn’t do much and that you can use in case of an earthquake.
 
-![](Chapter-8-3.png)
+![](Chapter-8-4.png)
 
 The benefits of this setup is simplicity in setup and the fact that it can be used in
 pretty much any use case. You simply install a second cluster and set up a mirroring
