@@ -379,7 +379,7 @@ at offset 53827878 among 10 partitions
 
 Tool to manually consume or produce messages
 
-#####Consuming
+####Consuming
 
 - Consume: **kafka-console-consumer.sh**
 
@@ -403,7 +403,7 @@ sample message 1
 sample message 2
 ^CProcessed a total of 2 messages
 ```
-######Consuming the offset Topics
+#####Consuming the offset Topics
 
 Tool to see what or how often offset are being committed for the cluster's consumer groups.
 For this purpose consume a special internal topic called **__consumer_offsets**.
@@ -418,7 +418,7 @@ Formatter' --max-messages 1
 Processed a total of 1 messages
 ```
 
-#####Producer
+####Producer
 
 - Producer: **kafka-console-producer.sh**
 
