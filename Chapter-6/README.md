@@ -16,7 +16,7 @@
 
 There are trade-offs that administrators and developers must be aware
 
-Examples: o reliably and consistently store messages versus other important considerations such as availability, high throughput, low latency, and hardware costs
+Examples: reliably and consistently store messages versus other important considerations such as availability, high throughput, low latency, and hardware costs
 
 ## Replication (Chapter 5 review)
 
